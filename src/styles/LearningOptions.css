@@ -17,6 +17,9 @@
 }
 
 .learning-option-button:focus {
-  background: blue;
-  outline: transparent;
+  outline: none;
+}
+
+.selected {
+  background-color: orange;
 }

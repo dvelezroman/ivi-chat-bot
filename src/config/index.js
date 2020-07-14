@@ -1,13 +1,16 @@
 import React from 'react';
 import { createChatBotMessage } from 'react-chatbot-kit';
-import { LearningOptions } from '../Components/LearningOptions';
+import SymptomsOptions from '../Components/SymptomOptions';
 
 const config = {
   botName: 'IVI Learning Bot',
   initialMessages: [
-    createChatBotMessage(`Hi, I'm Ivi. I am here to help. What do you want to learn?`, {
-      widget: 'learningOptions',
-    }),
+    createChatBotMessage(
+      `Hi, I'm Ivi. your medical assistance, what are your symptoms?`,
+      {
+        widget: 'learningOptions',
+      }
+    ),
   ],
   customStyles: {
     botMessageBox: {
@@ -20,7 +23,7 @@ const config = {
   widgets: [
     {
       widgetName: 'learningOptions',
-      widgetFunc: (props) => <LearningOptions {...props} />,
+      widgetFunc: (props) => <SymptomsOptions {...props} />,
     },
   ],
 };
