@@ -9,11 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Chatbot
-          config={config}
-          actionProvider={ActionProvider}
-          messageParser={MessageParser}
-        />
+        <span>Hello</span>
       </header>
     </div>
   );
